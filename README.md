@@ -1,16 +1,22 @@
-# React + Vite
+** WEATHER DASHBOARD PROJECT **
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- In this project I include everything requirement I have so check it out.
+  ** Feature **
+  So in this project I include fearture like toggle light to dark, and style UI design to be responsive.
 
-Currently, two official plugins are available:
+** API & Functionality **
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- First thing first I fetch weather api and create useState hook while I'm fetch them. Then I decide create useContext which allow me to pass each data from that API to another file.
+- Seconds things I go to Header File to pass that useState by using useContext as well and create function call handleSubmit when the search bar is submit it show the data result. And I also create another function call convertDegree which allow me to toggle degree C and F.
 
-## React Compiler
+- Third things is I fetch one more API which call foreday to show next 5 days for that city. Which I also do exact same things like weather api. But I also create another function call fetchAllWeatherData which I use Promise.all which allow me to call 2 API at once.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+** My API **
+my API endpoint = 92e8f4d9c2ae3108523a8fe757c6363c
+https://api.openweathermap.org/data/2.5/weather?q={city}&appid=92e8f4d9c2ae3108523a8fe757c6363c
+`https://api.openweathermap.org/data/2.5/forecast?q={city}&appid=92e8f4d9c2ae3108523a8fe757c6363c
 
-## Expanding the ESLint configuration
+** Final **
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- So that's pretty much I can do in this project.
+  Thanks!
