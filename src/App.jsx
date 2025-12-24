@@ -67,7 +67,6 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/save" element={<SaveWeather />} />
         </Routes>
       </Router>
     </WeatherContext.Provider>

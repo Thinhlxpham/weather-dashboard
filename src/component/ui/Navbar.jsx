@@ -21,9 +21,9 @@ function Navbar() {
         <a href="/" className="menu-link">
           Home
         </a>
-        <a href="/save" className="menu-link">
+        {/* <a href="/save" className="menu-link">
           Save
-        </a>
+        </a> */}
 
         <FontAwesomeIcon
           icon={faLightbulb}
